@@ -405,6 +405,10 @@ var money = MaskService.toMask('money', '123', {
 
 
 # Changelog
+
+## 1.7.0-forked
+* Added an option to optimistically display some charactes in a date pattern
+
 ## 1.6.2
 * Fixing custom mask when removing value in middle of the text. (thanks to [Aleksandr Kompaniets](https://github.com/Oxyaction))
 	* KNOW ISSUE: the custom mask is not allowing user to input white spaces for `*` translation temporarily.
