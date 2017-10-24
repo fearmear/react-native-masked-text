@@ -1,10 +1,10 @@
 {
   "name": "react-native-masked-text",
-  "version": "1.6.2",
+  "version": "1.7.0-forked",
   "description": "Text and TextInput with mask for React Native applications",
   "licenses": [
-    { 
-      "type": "MIT", 
+    {
+      "type": "MIT",
       "url": "https://www.opensource.org/licenses/mit-license.php"
     }
   ],

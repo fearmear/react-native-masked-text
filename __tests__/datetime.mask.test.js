@@ -101,3 +101,15 @@ test('01011990174030 with format DD/MM/YYYY HH:mm:ss results 01/01/1990 17:40:30
     expect(received).toBe(expected);
     expect(compareMomentObj(receivedRawValue, expectedRawValue)).toBe(0);
 });
+
+test('partial date should show / optimitically', () => {
+    var mask = new DatetimeMask();
+    var expected = '01/01/';
+    var received = mask.getValue('0101');
+
+    var expectedRawValue = moment(received, 'DD/MM/YYYY HH:mm:ss', true);
+    var receivedRawValue = mask.getRawValue(received); 
+
+    expect(received).toBe(expected);
+    expect(compareMomentObj(receivedRawValue, expectedRawValue)).toBe(0);
+});

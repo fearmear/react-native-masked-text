@@ -42,7 +42,8 @@ export default class MyComponent extends Component {
 				ref={'myDateText'}
 				type={'datetime'}
 				options={{
-					format: 'DD-MM-YYYY HH:mm:ss'
+					format: 'DD-MM-YYYY HH:mm:ss',
+					optimisticallyDisplayTheseChars: ['-', ':']
 				}} />
 		);
 	}
